@@ -1,0 +1,63 @@
+JSON
+****
+
+vorbereiten den Programmes gemäss den vorangegangenen Lektionen
+
+
+Assets einfügen
+JSON einfügen: beachten checked: Copy items ..., Create groups, target App
+
+Ordner und Files
+
+Views
+-	ContentView
+
+
+Models
+-	neu Recipe für Class Recipe: Identifiable, Decodeable
+	enthält alle benötigten Variablen
+	
+ViewModels
+-	RecipeModel
+	Class RecipeModel wird überwacht: ObservableObject 
+	@Published var recipes = [Receipe]() // analog @Stat
+	
+ContentView
+-	umbenennen zu RecipeListView (cmd+F, rename) all
+
+Referenz (Instance) model verbindet mit RecipeModel 
+ist Observed
+
+Services
+- DataService
+auslagern alle Zugriffe (fetching) auf Daten (JSON)
+
+Path finden und json File decodieren
+------------------------------------
+
+Errorhandling wenn path oder url nicht gefunden werden 
+
+func getLocalData() -> Recipe
+// Parse local json File
+
+
+// Get a url path to the json file und diesen auf nil prüfen
+
+// Create a url object
+
+// Create a data object
+
+// Decode the data with a JSON decoder
+
+// Add the unique IDs
+
+// Return the recipes
+
+RECIPE DETAIL VIEW
+******************
+
+New File SwiftUI RecipeDetailView
+
+...
+
+https://www.compart.com/de/unicode/ (für Sonderzeichen)
