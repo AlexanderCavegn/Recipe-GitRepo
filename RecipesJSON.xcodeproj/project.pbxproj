@@ -17,6 +17,7 @@
 		FA04033326AD6A8D008312BA /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA04033226AD6A8D008312BA /* DataServices.swift */; };
 		FA04033826ADA73C008312BA /* recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = FA04033726ADA73C008312BA /* recipes.json */; };
 		FA04033A26AE9D85008312BA /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA04033926AE9D85008312BA /* RecipeDetailView.swift */; };
+		FA26759326AEFBAB00E38FF2 /* DocMod4 in Resources */ = {isa = PBXBuildFile; fileRef = FA26759226AEFBAB00E38FF2 /* DocMod4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		FA04033226AD6A8D008312BA /* DataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
 		FA04033726ADA73C008312BA /* recipes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = recipes.json; sourceTree = "<group>"; };
 		FA04033926AE9D85008312BA /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
+		FA26759226AEFBAB00E38FF2 /* DocMod4 */ = {isa = PBXFileReference; lastKnownFileType = text; path = DocMod4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 		FA04030726AD586C008312BA = {
 			isa = PBXGroup;
 			children = (
+				FA26759226AEFBAB00E38FF2 /* DocMod4 */,
 				FA04032726AD5983008312BA /* Documentation */,
 				FA04031326AD586C008312BA /* RecipesJSONApp.swift */,
 				FA04031226AD586C008312BA /* RecipesJSON */,
@@ -184,6 +187,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA26759326AEFBAB00E38FF2 /* DocMod4 in Resources */,
 				FA04031B26AD586D008312BA /* Preview Assets.xcassets in Resources */,
 				FA04032826AD5983008312BA /* Documentation in Resources */,
 				FA04031826AD586D008312BA /* Assets.xcassets in Resources */,
