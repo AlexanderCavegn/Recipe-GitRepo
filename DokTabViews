@@ -20,3 +20,15 @@ Lesson 5 Updating the JSON Data
 zuerst erweitern wir die ingredients um integers. Der Zweck ist es, dass der User die Anzahl Personen wählen kann und dabei die Zutatenliste angepasst wird.
 
 ingredients hat einen eindeutigen namen (Salz, etc). den Text und optional mehrere Zutaten mit Mengenangaben.
+(im Ordner befindet sich eine neue JSON Datei deren Inhalt mit Copy Paste eingefügt wird)
+
+Der Value von jedem Ingredient ist kein String mehr, sondern wird wie Recipe eine neue class. auch diese muss wieder Identifiable (unique) und Decodable (JSON) sein.
+dies geschieht im File Recipe mit der Datenstruktur. Nochmals, es können oder können keine Mengenangaben anhalten und sind deshalb optinals. der String ingredients wird zu einem array mit Objekten von der neue class ingredient
+zusätzlich wird in Recipe noch der array highlights eingefügt.
+die unique ID für den array ingredients wird der bestehenden do schleife für die vergabe der Id im File DataServices eingefügt. die variable bezieht sich auf recipeData, den aus JSON ausgelesenen Datensatz.
+Im Prinzip müsste nun die Detailview angepasst werden. Ingredients sind nicht länger Strings, sondern entsprechen der neuen struture ingredients. Der Einfachheit halber wird jedoch mal nur der Name ausgegeben, der Rest folgt später. RecipeDetailView ScrollView VStack Ingredients, Schleife. recipe braucht nicht länger ein UUID, denn der name ist eindeutig
+
+COMPILER FEHLER: unable to type-check RecipeDetailView - body
+schaue im Original von CWC nach, denn dort läuft es.
+Die Schlafe for each recipe war falsch, betrifft nicht recipe, sondern recipe.ingredients, den array mit den ingredients. (schnell behoben) (weiss nicht was sonst durchlaufen würde - die class?)
+
