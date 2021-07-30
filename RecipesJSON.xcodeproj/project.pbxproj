@@ -19,6 +19,7 @@
 		FA04033A26AE9D85008312BA /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA04033926AE9D85008312BA /* RecipeDetailView.swift */; };
 		FA26759326AEFBAB00E38FF2 /* DocMod4 in Resources */ = {isa = PBXBuildFile; fileRef = FA26759226AEFBAB00E38FF2 /* DocMod4 */; };
 		FA547B0026B2DADF001F80B8 /* RecipeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA547AFF26B2DADF001F80B8 /* RecipeTabView.swift */; };
+		FA547B0626B3E495001F80B8 /* DokTabViews in Resources */ = {isa = PBXBuildFile; fileRef = FA547B0526B3E495001F80B8 /* DokTabViews */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		FA04033926AE9D85008312BA /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
 		FA26759226AEFBAB00E38FF2 /* DocMod4 */ = {isa = PBXFileReference; lastKnownFileType = text; path = DocMod4; sourceTree = "<group>"; };
 		FA547AFF26B2DADF001F80B8 /* RecipeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTabView.swift; sourceTree = "<group>"; };
+		FA547B0526B3E495001F80B8 /* DokTabViews */ = {isa = PBXFileReference; lastKnownFileType = text; path = DokTabViews; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 		FA04030726AD586C008312BA = {
 			isa = PBXGroup;
 			children = (
+				FA547B0526B3E495001F80B8 /* DokTabViews */,
 				FA26759226AEFBAB00E38FF2 /* DocMod4 */,
 				FA04032726AD5983008312BA /* Documentation */,
 				FA04031326AD586C008312BA /* RecipesJSONApp.swift */,
@@ -191,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA26759326AEFBAB00E38FF2 /* DocMod4 in Resources */,
+				FA547B0626B3E495001F80B8 /* DokTabViews in Resources */,
 				FA04031B26AD586D008312BA /* Preview Assets.xcassets in Resources */,
 				FA04032826AD5983008312BA /* Documentation in Resources */,
 				FA04031826AD586D008312BA /* Assets.xcassets in Resources */,
