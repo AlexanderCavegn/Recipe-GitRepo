@@ -32,3 +32,18 @@ COMPILER FEHLER: unable to type-check RecipeDetailView - body
 schaue im Original von CWC nach, denn dort läuft es.
 Die Schlafe for each recipe war falsch, betrifft nicht recipe, sondern recipe.ingredients, den array mit den ingredients. (schnell behoben) (weiss nicht was sonst durchlaufen würde - die class?)
 
+Environment
+***********
+
+view model:
+
+	tab view - listview - detail view
+	tab view - featuredview
+
+Das Programm soll nun um eine neue View 'RecipeFeatureView' ergänzt werden. in RecipeTabView wird der erste Tab vom reinen Text 'Featured View' durch eine Instanz von der neuen view ersetzt.
+Das Problem ist nun, dass mehrere views auf dieselbe Instanz des RecipeModel zugreifen sollten. Erzeugt man in den  views eigene Instanzen gibt es ein Datenproblem (unterschiedliche Datensätze). Es gäbe theoretisch unterschiedliche Lösungsansätze, welche jedoch problematisch sind. Instanzen in jeder view beinhalten unterschiedliche daten. Das verschieben in die TabView bedingt, dass Code zum verschieben der Daten in tiefergestellt view benötigt würde. Wir brauchen einen anderen ansatz.
+
+Das geht mit dem neuen EnvironmentObject
+
+die Instanz @ObservableObject model von RecipeModel in der ListView wird entfernt. Dafür erhält die TabView einen modifier environmentObject von RecipeModel. Da RecipeModel observable ist, ist dieses neue Objekt protokollkonform. Das gelöschte observableObject model  wird durch ein Environment Object ersetzt. Dies in der ListView. Detailview  steht direkt unterhalb von listview und hat durch environment zugriff auf model
+	Featureview, welches sich in einem andern ast befindet erhält dageben ebenfalls dieses Object.
